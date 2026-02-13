@@ -19,7 +19,7 @@ func GetBlogs(w http.ResponseWriter, r *http.Request) {
 // GetBlogByID handles GET /api/blogs/{id} - returns a specific blog
 func GetBlogByID(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
-	
+
 	// Extract ID from URL path
 	path := strings.TrimPrefix(r.URL.Path, "/api/blogs/")
 	id, err := strconv.Atoi(path)

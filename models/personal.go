@@ -16,19 +16,19 @@ type PersonalInfo struct {
 
 // Education represents educational background
 type Education struct {
-	School     string `json:"school"`
-	Degree     string `json:"degree"`
-	Field      string `json:"field"`
-	StartYear  int    `json:"start_year"`
-	EndYear    int    `json:"end_year"`
+	School    string `json:"school"`
+	Degree    string `json:"degree"`
+	Field     string `json:"field"`
+	StartYear int    `json:"start_year"`
+	EndYear   int    `json:"end_year"`
 }
 
 // Experience represents work experience
 type Experience struct {
-	Company     string   `json:"company"`
-	Position    string   `json:"position"`
-	Description string   `json:"description"`
-	StartYear   int      `json:"start_year"`
-	EndYear     *int     `json:"end_year,omitempty"`
+	Company      string   `json:"company"`
+	Position     string   `json:"position"`
+	Description  string   `json:"description"`
+	StartYear    int      `json:"start_year"`
+	EndYear      *int     `json:"end_year,omitempty"`
 	Technologies []string `json:"technologies"`
 }

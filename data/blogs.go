@@ -1,8 +1,8 @@
 package data
 
 import (
-	"time"
 	"github.com/JFeng2048/jfeng_blog/models"
+	"time"
 )
 
 // GetBlogs returns sample blog data

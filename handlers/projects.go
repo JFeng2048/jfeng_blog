@@ -19,7 +19,7 @@ func GetProjects(w http.ResponseWriter, r *http.Request) {
 // GetProjectByID handles GET /api/projects/{id} - returns a specific project
 func GetProjectByID(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
-	
+
 	// Extract ID from URL path
 	path := strings.TrimPrefix(r.URL.Path, "/api/projects/")
 	id, err := strconv.Atoi(path)

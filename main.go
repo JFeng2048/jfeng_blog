@@ -19,7 +19,7 @@ func main() {
 			handlers.GetBlogs(w, r)
 		}
 	})
-	
+
 	http.HandleFunc("/api/projects", handlers.GetProjects)
 	http.HandleFunc("/api/projects/", func(w http.ResponseWriter, r *http.Request) {
 		if strings.HasPrefix(r.URL.Path, "/api/projects/") && r.URL.Path != "/api/projects/" {
@@ -28,7 +28,7 @@ func main() {
 			handlers.GetProjects(w, r)
 		}
 	})
-	
+
 	http.HandleFunc("/api/personal", handlers.GetPersonalInfo)
 
 	// Root endpoint
