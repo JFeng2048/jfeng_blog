@@ -19,8 +19,8 @@ system:
 mysql:
   host: localhost
   port: 3306
-  user: root
-  password: 123456
+  user: username
+  password: password
   dbname: jfeng_blog
   max_open_conns: 25
   max_idle_conns: 10
@@ -38,3 +38,24 @@ redis:
   conn_timeout: 5000
   read_timeout: 3000
   write_timeout: 3000
+
+cors:
+  allow_origins:
+    - "*"
+  allow_methods:
+    - "POST"
+    - "GET"
+    - "OPTIONS"
+    - "PUT"
+    - "DELETE"
+    - "UPDATE"
+  allow_headers:
+    - "Origin"
+    - "Content-Type"
+    - "Content-Length"
+    - "Accept-Encoding"
+    - "X-CSRF-Token"
+    - "Authorization"
+  expose_headers:
+    - "Content-Length"
+  allow_credentials: true
