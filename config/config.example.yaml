@@ -1,0 +1,40 @@
+server:
+  name: jfeng_blog
+  port: 8080
+  ip: 0.0.0.0
+  timeout: 5s
+
+log:
+  level: debug
+  type: file
+  log_dir: ./logs
+  log_file_name: jfeng_blog.log
+  log_file_max_size: 100
+  log_file_max_age: 7
+  log_file_max_backups: 3
+
+system:
+  env: dev
+
+mysql:
+  host: localhost
+  port: 3306
+  user: root
+  password: 123456
+  dbname: jfeng_blog
+  max_open_conns: 25
+  max_idle_conns: 10
+  conn_max_lifetime: 300
+  table_prefix: ""
+
+redis:
+  enabled: true
+  host: localhost
+  port: 6379
+  password: 123456
+  db: 0
+  pool_size: 10
+  min_idle_conns: 5
+  conn_timeout: 5000
+  read_timeout: 3000
+  write_timeout: 3000
