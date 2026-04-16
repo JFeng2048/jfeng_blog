@@ -65,10 +65,14 @@ const docTemplate = `{
             "type": "object",
             "properties": {
                 "code": {
+                    "description": "错误码",
                     "type": "integer"
                 },
-                "data": {},
+                "data": {
+                    "description": "错误数据"
+                },
                 "msg": {
+                    "description": "错误信息",
                     "type": "string"
                 }
             }
@@ -77,10 +81,14 @@ const docTemplate = `{
             "type": "object",
             "properties": {
                 "code": {
+                    "description": "成功码",
                     "type": "integer"
                 },
-                "data": {},
+                "data": {
+                    "description": "成功数据"
+                },
                 "msg": {
+                    "description": "成功信息",
                     "type": "string"
                 }
             }

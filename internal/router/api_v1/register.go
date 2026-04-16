@@ -7,4 +7,6 @@ import (
 func RegisterV1(r *gin.RouterGroup) {
 	// 用户路由
 	RegisterUserRoutes(r)
+	// 文章路由
+	RegisterPostRoutes(r)
 }
